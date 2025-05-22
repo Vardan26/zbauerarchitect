@@ -1,0 +1,365 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "layout": {
+      "contentSize": "800px",
+      "wideSize": "1200px"
+    },
+    "spacing": {
+      "customMargin": true,
+      "customPadding": true,
+      "spacingSizes": [
+        {
+          "name": "Tiny",
+          "size": "10px",
+          "slug": "10"
+        },
+        {
+          "name": "X-Small",
+          "size": "20px",
+          "slug": "20"
+        },
+        {
+          "name": "Small",
+          "size": "30px",
+          "slug": "30"
+        },
+        {
+          "name": "Regular",
+          "size": "clamp(30px, 5vw, 50px)",
+          "slug": "50"
+        },
+        {
+          "name": "Large",
+          "size": "clamp(30px, 7vw, 70px)",
+          "slug": "60"
+        },
+        {
+          "name": "X-Large",
+          "size": "clamp(50px, 7vw, 90px)",
+          "slug": "70"
+        },
+        {
+          "name": "XX-Large",
+          "size": "clamp(70px, 10vw, 140px)",
+          "slug": "80"
+        }
+      ],
+      "units": ["px", "%", "em", "rem", "vh", "vw"]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "name": "Roboto",
+          "slug": "roboto",
+          "fontFamily": "Roboto, sans-serif",
+          "fontFace": [
+            {
+              "src": [
+                "file:./assets/fonts/roboto/roboto-cyrillic-ext-Thin.woff2",
+                "file:./assets/fonts/roboto/roboto-cyrillic-Thin.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-ext-Thin.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-Thin.woff2",
+                "file:./assets/fonts/roboto/roboto-vietnamese-Thin.woff2",
+                "file:./assets/fonts/roboto/roboto-latin-ext-Thin.woff2",
+                "file:./assets/fonts/roboto/roboto-Thin.woff2"
+              ],
+              "fontWeight": "100",
+              "fontStyle": "normal",
+              "fontFamily": "Roboto, sans-serif",
+              "fontDisplay": "swap"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/roboto/roboto-cyrillic-ext-Thin-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-cyrillic-Thin-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-ext-Thin-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-Thin-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-vietnamese-Thin-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-latin-ext-Thin-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-Thin-italic.woff2"
+              ],
+              "fontWeight": "100",
+              "fontStyle": "italic",
+              "fontFamily": "Roboto, sans-serif",
+              "fontDisplay": "swap"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/roboto/roboto-cyrillic-ext-Light.woff2",
+                "file:./assets/fonts/roboto/roboto-cyrillic-Light.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-ext-Light.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-Light.woff2",
+                "file:./assets/fonts/roboto/roboto-vietnamese-Light.woff2",
+                "file:./assets/fonts/roboto/roboto-latin-ext-Light.woff2",
+                "file:./assets/fonts/roboto/roboto-Light.woff2"
+              ],
+              "fontWeight": "300",
+              "fontStyle": "normal",
+              "fontFamily": "Roboto, sans-serif",
+              "fontDisplay": "swap"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/roboto/roboto-cyrillic-ext-Light-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-cyrillic-Light-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-ext-Light-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-Light-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-vietnamese-Light-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-latin-ext-Light-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-Light-italic.woff2"
+              ],
+              "fontWeight": "300",
+              "fontStyle": "italic",
+              "fontFamily": "Roboto, sans-serif",
+              "fontDisplay": "swap"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/roboto/roboto-cyrillic-ext-Regular.woff2",
+                "file:./assets/fonts/roboto/roboto-cyrillic-Regular.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-ext-Regular.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-Regular.woff2",
+                "file:./assets/fonts/roboto/roboto-vietnamese-Regular.woff2",
+                "file:./assets/fonts/roboto/roboto-latin-ext-Regular.woff2",
+                "file:./assets/fonts/roboto/roboto-Regular.woff2"
+              ],
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontFamily": "Roboto, sans-serif",
+              "fontDisplay": "swap"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/roboto/roboto-cyrillic-ext-Regular-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-cyrillic-Regular-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-ext-Regular-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-Regular-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-vietnamese-Regular-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-latin-ext-Regular-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-Regular-italic.woff2"
+              ],
+              "fontWeight": "400",
+              "fontStyle": "italic",
+              "fontFamily": "Roboto, sans-serif",
+              "fontDisplay": "swap"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/roboto/roboto-cyrillic-ext-Medium.woff2",
+                "file:./assets/fonts/roboto/roboto-cyrillic-Medium.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-ext-Medium.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-Medium.woff2",
+                "file:./assets/fonts/roboto/roboto-vietnamese-Medium.woff2",
+                "file:./assets/fonts/roboto/roboto-latin-ext-Medium.woff2",
+                "file:./assets/fonts/roboto/roboto-Medium.woff2"
+              ],
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "fontFamily": "Roboto, sans-serif",
+              "fontDisplay": "swap"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/roboto/roboto-cyrillic-ext-Medium-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-cyrillic-Medium-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-ext-Medium-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-Medium-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-vietnamese-Medium-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-latin-ext-Medium-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-Medium-italic.woff2"
+              ],
+              "fontWeight": "500",
+              "fontStyle": "italic",
+              "fontFamily": "Roboto, sans-serif",
+              "fontDisplay": "swap"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/roboto/roboto-cyrillic-ext-Bold.woff2",
+                "file:./assets/fonts/roboto/roboto-cyrillic-Bold.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-ext-Bold.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-Bold.woff2",
+                "file:./assets/fonts/roboto/roboto-vietnamese-Bold.woff2",
+                "file:./assets/fonts/roboto/roboto-latin-ext-Bold.woff2",
+                "file:./assets/fonts/roboto/roboto-Bold.woff2"
+              ],
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "fontFamily": "Roboto, sans-serif",
+              "fontDisplay": "swap"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/roboto/roboto-cyrillic-ext-Bold-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-cyrillic-Bold-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-ext-Bold-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-Bold-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-vietnamese-Bold-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-latin-ext-Bold-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-Bold-italic.woff2"
+              ],
+              "fontWeight": "700",
+              "fontStyle": "italic",
+              "fontFamily": "Roboto, sans-serif",
+              "fontDisplay": "swap"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/roboto/roboto-cyrillic-ext-Black.woff2",
+                "file:./assets/fonts/roboto/roboto-cyrillic-Black.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-ext-Black.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-Black.woff2",
+                "file:./assets/fonts/roboto/roboto-vietnamese-Black.woff2",
+                "file:./assets/fonts/roboto/roboto-latin-ext-Black.woff2",
+                "file:./assets/fonts/roboto/roboto-Black.woff2"
+              ],
+              "fontWeight": "900",
+              "fontStyle": "normal",
+              "fontFamily": "Roboto, sans-serif",
+              "fontDisplay": "swap"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/roboto/roboto-cyrillic-ext-Black-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-cyrillic-Black-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-ext-Black-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-greek-Black-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-vietnamese-Black-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-latin-ext-Black-italic.woff2",
+                "file:./assets/fonts/roboto/roboto-Black-italic.woff2"
+              ],
+              "fontWeight": "900",
+              "fontStyle": "italic",
+              "fontFamily": "Roboto, sans-serif",
+              "fontDisplay": "swap"
+            }
+          ]
+        },
+        {
+          "name": "Bebas Neue Pro",
+          "slug": "bebas-neue-pro",
+          "fontFamily": "Bebas Neue Pro, sans-serif",
+          "fontFace": [
+            {
+              "src": [
+                "file:./assets/fonts/bebas-neue-pro/Bebas-Neue-Pro-Regular.ttf"
+              ],
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontFamily": "Bebas Neue Pro, sans-serif",
+              "fontDisplay": "swap"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/bebas-neue-pro/Bebas-Neue-Pro-Italic.ttf"
+              ],
+              "fontWeight": "400",
+              "fontStyle": "italic",
+              "fontFamily": "Bebas Neue Pro, sans-serif",
+              "fontDisplay": "swap"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/bebas-neue-pro/Bebas-Neue-Pro-Bold.ttf"
+              ],
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "fontFamily": "Bebas Neue Pro, sans-serif",
+              "fontDisplay": "swap"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/bebas-neue-pro/Bebas-Neue-Pro-Bold-Italic.ttf"
+              ],
+              "fontWeight": "700",
+              "fontStyle": "italic",
+              "fontFamily": "Bebas Neue Pro, sans-serif",
+              "fontDisplay": "swap"
+            }
+          ]
+        },
+        {
+          "name": "Bebas Neue Pro Book",
+          "slug": "bebas-neue-pro-book",
+          "fontFamily": "Bebas Neue Pro Book, sans-serif",
+          "fontFace": [
+            {
+              "src": [
+                "file:./assets/fonts/bebas-neue-pro/Bebas-Neue-Pro-Book.ttf"
+              ],
+              "fontWeight": "400",
+              "fontStyle": "normal",
+              "fontFamily": "Bebas Neue Pro Book, sans-serif",
+              "fontDisplay": "swap"
+            },
+            {
+              "src": [
+                "file:./assets/fonts/bebas-neue-pro/Bebas-Neue-Pro-Book-Italic.ttf"
+              ],
+              "fontWeight": "400",
+              "fontStyle": "italic",
+              "fontFamily": "Bebas Neue Pro Book, sans-serif",
+              "fontDisplay": "swap"
+            }
+          ]
+        }
+      ],
+      "fontSizes": [
+        { "slug": "xsmall", "name": "X-Small", "size": "16px" },
+        { "slug": "small", "name": "Small", "size": "18px" },
+        { "slug": "medium", "name": "Medium", "size": "28px" },
+        { "slug": "large", "name": "Large", "size": "36px" },
+        { "slug": "xarge", "name": "X-Large", "size": "48px" }
+      ],
+      "lineHeight": true
+    },
+    "color": {
+      "palette": [
+        { "slug": "secondary", "name": "Secondary", "color": "#757575" },
+        { "slug": "background", "name": "Background", "color": "#ffffff" },
+        { "slug": "accent", "name": "Accent", "color": "#0073aa" },
+        { "slug": "dark-bg", "name": "Dark Background", "color": "#121212" },
+        { "slug": "light-text", "name": "Light Text", "color": "#f1f1f1" }
+      ],
+      "custom": true
+    },
+    "custom": {
+      "spacing": {},
+      "socialIcons": ["gmail", "linkedin", "instagram", "facebook"]
+    },
+    "blocks": {
+      "core/group": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        }
+      },
+      "core/paragraph": {
+        "spacing": {
+          "margin": true,
+          "padding": true
+        }
+      }
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#ffffff",
+      "text": "#1a1a1a"
+    }
+  },
+  "stylesVariations": [
+    {
+      "name": "dark",
+      "title": "Dark Mode",
+      "styles": {
+        "color": {
+          "background": "#121212",
+          "text": "#f1f1f1"
+        }
+      }
+    }
+  ]
+}
