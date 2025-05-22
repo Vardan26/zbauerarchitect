@@ -1,0 +1,10 @@
+{
+  "apiVersion": 2,
+  "name": "zbauerarchitect/about-info",
+  "title": "About Info",
+  "category": "widgets",
+  "icon": "info",
+  "description": "Shows about info.",
+  "editorScript": "custom-blocks-bundle",
+  "attributes": {}
+}

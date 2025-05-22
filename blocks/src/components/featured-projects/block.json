@@ -1,0 +1,10 @@
+{
+  "apiVersion": 2,
+  "name": "zbauerarchitect/featured-projects",
+  "title": "Featured Projects",
+  "category": "widgets",
+  "icon": "portfolio",
+  "description": "Shows grouped projects from categories.",
+  "editorScript": "custom-blocks-bundle",
+  "attributes": {}
+}

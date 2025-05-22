@@ -1,0 +1,9 @@
+{
+  "apiVersion": 2,
+  "name": "zbauerarchitect/projects-router",
+  "title": "Projects Router",
+  "category": "theme",
+  "icon": "admin-site",
+  "editorScript": "custom-blocks-bundle",
+  "attributes": {}
+}
