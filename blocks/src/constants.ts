@@ -1,1 +1,1 @@
-export const BASE_PATH = "/wordpress";
+export const BASE_PATH = "/";

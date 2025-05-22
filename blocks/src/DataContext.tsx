@@ -32,12 +32,10 @@ export const ProjectsProvider = ({ children }: Props) => {
   const fetchAllData = async () => {
     console.log("new date", new Date().toISOString());
     const projectsRes = await fetch(
-      "/wordpress/wp-json/wp/v2/projects?per_page=100&_embed"
+      "/wp-json/wp/v2/projects?per_page=100&_embed"
     );
 
-    const projectTypesRes = await fetch(
-      "/wordpress/wp-json/wp/v2/project_types"
-    );
+    const projectTypesRes = await fetch("/wp-json/wp/v2/project_types");
 
     const projects: Project[] = await projectsRes.json();
     const projectTypes: ProjectTypeTerm[] = await projectTypesRes.json();
