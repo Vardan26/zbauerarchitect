@@ -1,0 +1,179 @@
+.title {
+  font-family: "Bebas Neue Pro", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  * {
+    font-family: inherit;
+    font-weight: inherit;
+  }
+
+  &-banner {
+    font-size: 120px;
+    font-family: "Bebas Neue Pro", sans-serif;
+    font-weight: 300;
+  }
+
+  &-big {
+    font-size: 60px;
+    color: #76a88c;
+    font-family: "Bebas Neue Pro Book", sans-serif;
+    font-weight: 100;
+    line-height: 1;
+  }
+}
+
+.sub-title {
+  font-family: "Bebas Neue Pro", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  text-transform: uppercase;
+
+  * {
+    font-family: inherit;
+    font-weight: inherit;
+  }
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+
+  &-lg,
+  &-lg * {
+    font-size: 20px;
+  }
+
+  &-md,
+  &-md * {
+    font-size: 18px;
+  }
+
+  &-sm,
+  &-sm * {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  * {
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+  }
+}
+
+.link {
+  font-family: "Bebas Neue Pro", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &.with-icon::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f063";
+    display: inline-block;
+    transform: rotate(-45deg);
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  * {
+    font-family: inherit;
+    font-weight: inherit;
+  }
+}
+
+.bold,
+strong {
+  font-weight: bold !important;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* md: up to 768px */
+@media (max-width: 768px) {
+  .title {
+    font-size: 44px;
+    color: #76a88c;
+
+    &-banner {
+      font-size: 100px;
+    }
+
+    &-big {
+      font-size: 52px;
+    }
+  }
+
+  .sub-title {
+    font-size: 32px;
+  }
+
+  .text {
+    &-lg,
+    &-lg * {
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    &-md,
+    &-md * {
+      font-size: 16px;
+      color: #757575;
+    }
+
+    &-sm,
+    &-sm * {
+      font-size: 14px;
+    }
+  }
+}
+
+/* sm: up to 640px */
+@media (max-width: 640px) {
+  .title {
+    font-size: 40px;
+    color: #76a88c;
+    line-height: 1;
+
+    &-banner {
+      font-size: 70px;
+    }
+
+    &-big {
+      font-size: 46px;
+    }
+  }
+
+  .sub-title {
+    font-size: 30px;
+  }
+
+  .text {
+    &-lg,
+    &-lg * {
+      font-size: 16px;
+    }
+
+    &-sm,
+    &-sm * {
+      font-size: 12px;
+    }
+  }
+}
+
+/* sm: up to 480px */
+@media (max-width: 480px) {
+  .title {
+    margin-bottom: 5px;
+  }
+}

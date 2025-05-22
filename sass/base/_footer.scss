@@ -1,0 +1,138 @@
+footer {
+  margin-top: auto;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding-top: 26px;
+  margin-top: 100px;
+
+  .container {
+    margin-top: 0 !important;
+  }
+
+  .wp-block-site-logo {
+    margin-bottom: 40px;
+  }
+
+  .wp-block-navigation {
+    align-items: flex-start;
+    gap: 0;
+
+    .vertical {
+      flex-direction: column;
+    }
+  }
+
+  .copyright {
+    padding: 40px 0;
+    border-top: 1px solid #d9d9d9;
+    display: block;
+    margin-top: 15px;
+  }
+
+  .social-icons {
+    font-family: "Font Awesome 6 Brands";
+    display: flex;
+    gap: 10px;
+    margin-top: 28px;
+
+    & li a {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      background-color: rgba($color: #000000, $alpha: 0.6);
+      color: #fff;
+    }
+  }
+
+  .nav-menu,
+  .list {
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  .address {
+    &-content {
+      flex-direction: column;
+      margin-top: 35px;
+      line-height: 1.8;
+
+      & > *:first-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+/* md: up to 768px */
+@media (max-width: 768px) {
+  .footer {
+    .content {
+      & > * {
+        min-width: auto;
+        flex-basis: calc(50% - 5px);
+      }
+    }
+
+    .nav-menu,
+    .list {
+      li {
+        margin-bottom: 0;
+      }
+    }
+
+    .nav-menu {
+      order: 1;
+      margin-bottom: 27px;
+
+      .text-sm,
+      .text-sm * {
+        font-weight: bold;
+      }
+    }
+    .address {
+      order: 3;
+      flex-basis: 100%;
+      margin-bottom: 50px;
+
+      &-content {
+        flex-direction: row;
+        margin-top: 13px;
+        line-height: 1.2;
+        justify-content: space-between;
+
+        & > * {
+          width: calc(50% - 5px);
+        }
+      }
+    }
+    .social {
+      order: 4;
+      &-icons {
+        margin-top: 13px;
+      }
+    }
+    .list {
+      order: 2;
+
+      & * {
+        font-weight: bold;
+      }
+    }
+
+    .copyright {
+      padding: 35px 0;
+      margin-top: 48px;
+      text-align: center;
+    }
+  }
+}
+
+/* sm: up to 480px */
+@media (max-width: 480px) {
+}

@@ -1,0 +1,329 @@
+.about-content {
+  gap: 0;
+  overflow: hidden;
+
+  & > :first-child {
+    flex-basis: 450px;
+    flex-grow: 0;
+  }
+  & > :last-child {
+    .wp-block-image {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      margin: 0;
+      max-height: 600px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+
+    .with-icon {
+      position: absolute;
+      bottom: 15px;
+    }
+  }
+}
+
+.about-grid {
+  width: 370px;
+  align-self: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  margin-left: auto;
+
+  & > .wp-block-group {
+    width: 155px;
+    margin: 15px;
+    flex-grow: 0;
+
+    & > .flex {
+      align-items: flex-end;
+      gap: 10px;
+    }
+  }
+}
+
+.featured-projects {
+  margin-top: 160px;
+
+  .projects-wrapper {
+    border-bottom: solid 1px #000;
+    margin-bottom: 10px;
+  }
+
+  .projects-group {
+    border-top: solid 1px #000;
+    width: 100%;
+    overflow: hidden;
+
+    .sub-title {
+      width: 270px;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+
+    .projects-item {
+      padding: 10px 0;
+    }
+
+    .projects-item:not(:nth-child(1)) {
+      border-top: solid 1px #b3b3b3;
+    }
+
+    .image-wrapper {
+      width: 360px;
+      height: 255px;
+      margin-right: 22px;
+      overflow: hidden;
+      flex-shrink: 0;
+
+      &.closed {
+        height: 60px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    .fa-solid {
+      color: #d9d9d9;
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+
+  .description {
+    .light {
+      display: -webkit-box;
+      line-clamp: 10;
+      -webkit-line-clamp: 10;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  .cta {
+    justify-content: flex-end;
+    align-self: flex-end;
+    margin-top: auto;
+  }
+}
+
+.services {
+  .content {
+    justify-content: flex-start;
+    & > * {
+      flex: 0 1 32%;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      padding-left: 30px;
+
+      .title-big {
+        margin-right: 17px !important;
+      }
+    }
+  }
+}
+
+.partners {
+  .content {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  &-item {
+    width: 168px;
+    height: 132px;
+    flex-basis: 168px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    min-width: auto;
+
+    img {
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+/* xl: up to 1280px */
+@media (max-width: 1280px) {
+  .services .content > * {
+    flex: 0 1 31%;
+  }
+}
+
+/* lg: up to 1024px */
+@media (max-width: 1024px) {
+  .about-content {
+    margin-top: 0;
+
+    & > :first-child {
+      flex-basis: 400px;
+    }
+  }
+  .about-grid {
+    margin-top: 60px;
+  }
+  .featured-projects {
+    .projects-group {
+      .sub-title {
+        width: 200px;
+        margin-right: 10px;
+      }
+      .image-wrapper {
+        width: 260px;
+        height: 200px;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .services .content > * {
+    flex: 1;
+  }
+}
+
+/* md: up to 768px */
+@media (max-width: 768px) {
+  .about-content {
+    & > :first-child {
+      flex: auto;
+      margin-bottom: 10px;
+    }
+    & > :last-child {
+      flex: auto;
+    }
+  }
+
+  .about-grid {
+    & > .wp-block-group {
+      width: 130px;
+      margin: 5px;
+    }
+  }
+
+  .featured-projects {
+    .projects-wrapper {
+      flex-direction: column;
+      display: flex;
+      border: none;
+    }
+    .projects-group {
+      flex-wrap: wrap;
+      border: none;
+
+      .projects-item {
+        padding: 14px 0;
+        flex-direction: column;
+      }
+
+      .sub-title {
+        width: 100%;
+      }
+      .image-wrapper {
+        width: 100%;
+        margin-right: 0;
+      }
+      .description {
+        .flex {
+          align-items: center;
+        }
+        .bold {
+          margin-right: 10px;
+        }
+      }
+      .fa-solid {
+        font-size: 24px;
+        padding: 3px;
+      }
+    }
+  }
+
+  .partners {
+    .content {
+      justify-content: flex-start;
+      gap: 10px;
+    }
+
+    &-item {
+      width: 100px;
+      height: 80px;
+      flex-basis: 100px;
+      display: flex;
+    }
+  }
+}
+
+/* md: up to 480px */
+@media (max-width: 480px) {
+  .about-content {
+    & > :last-child {
+      .with-icon {
+        bottom: 50px;
+        left: 10px;
+      }
+    }
+  }
+
+  .about-grid {
+    margin-top: 30px;
+    width: 250px;
+
+    & > .wp-block-group {
+      width: 115px;
+    }
+  }
+
+  .featured-projects {
+    margin-top: 40px;
+
+    .title {
+      margin-bottom: 30px;
+    }
+
+    .projects-group {
+      .image-wrapper {
+        height: 185px;
+
+        .closed {
+          height: 44px;
+        }
+      }
+    }
+  }
+
+  .services .content {
+    margin-top: 27px;
+
+    & > * {
+      padding-left: 40px;
+      gap: 0;
+    }
+  }
+
+  .partners {
+    margin-top: 60px;
+    .content {
+      margin-top: 25px;
+    }
+
+    &-item {
+      margin-bottom: 7px;
+    }
+  }
+}
