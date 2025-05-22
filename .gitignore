@@ -1,0 +1,33 @@
+# Node.js dependencies
+blocks/node_modules/
+blocks/package-lock.json
+
+# Build artifacts
+blocks/build/
+
+# Sass cache
+.sass-cache/
+*.css.map
+
+# Log files
+*.log
+
+# macOS system files
+.DS_Store
+
+# VSCode and IDE files
+.vscode/
+.idea/
+
+# OS-generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+
+# Ignore compiled CSS if you're using Sass or a build system
+styles/*.css
+
+# Ignore environment or local config
+.env
+.env.*
