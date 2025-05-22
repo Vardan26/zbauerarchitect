@@ -1,0 +1,65 @@
+
+  /* Bebas Neue Pro Regular */
+
+@font-face {
+    font-family: "Bebas Neue Pro";
+    src: url(./Bebas-Neue-Pro-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Bebas Neue Pro Italic */
+  @font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url(./Bebas-Neue-Pro-Italic.ttf) format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+
+    
+  /* Bebas Neue Pro Bold */
+  @font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url(./Bebas-Neue-Pro-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Bebas Neue Pro Bold Italic */
+  @font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url(./Bebas-Neue-Pro-Bold-Italic.ttf) format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  /* Bebas Neue Pro Book */
+  @font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url(./Bebas-Neue-Pro-Book.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  /* Bebas Neue Pro Book Italic */
+  @font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url(./Bebas-Neue-Pro-Book-Italic.ttf) format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  /* Bebas Neue Pro light */
+  @font-face {
+    font-family: 'Bebas Neue Pro';
+    src: url(./Bebas-Neue-Pro-Light.ttf) format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
