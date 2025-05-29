@@ -125,3 +125,20 @@ add_action('wp_enqueue_scripts', 'enqueue_styles');
 // -----Projects------
 
 require_once get_template_directory() . '/projects.php';
+
+function enqueue_marker_controls_script() {
+    if (is_page('contact-us')) { // ← use your actual slug here
+        wp_enqueue_script(
+            'marker-controls',
+            get_template_directory_uri() . '/assets/map.js',
+            array(), // Add dependencies like 'jquery' if needed
+            null,
+            true // Load in footer
+        );
+		  // Pass theme URL to JS
+		wp_localize_script('marker-controls', 'themeData', array(
+			'themeUrl' => get_template_directory_uri()
+		));
+    }
+}
+add_action('wp_enqueue_scripts', 'enqueue_marker_controls_script');

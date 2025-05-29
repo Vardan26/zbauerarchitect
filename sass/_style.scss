@@ -17,6 +17,11 @@ h6 {
   line-height: 1.2;
 }
 
+a:not(.ab-item):not(.screen-reader-shortcut):active,
+a:not(.ab-item):not(.screen-reader-shortcut):focus {
+  outline: none;
+}
+
 .page {
   .wp-site-blocks {
     min-height: 50vh;
@@ -31,6 +36,27 @@ h6 {
   position: relative;
   margin-top: 64px;
   min-height: 50vh;
+}
+
+.address-marker:not(.active-address) {
+  cursor: pointer;
+  & > .sub-title {
+    color: #757575 !important;
+  }
+}
+
+.ol-marker {
+  height: 35px !important;
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.active-marker {
+  transform: scale(1.2);
+  z-index: 1000;
 }
 
 /* md: up to 768px */
