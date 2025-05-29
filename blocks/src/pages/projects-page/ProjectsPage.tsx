@@ -176,7 +176,18 @@ const ProjectsPage = (props: Props) => {
                 : null;
 
               return (
-                <li key={project.id} className="flex column projects-item">
+                <li
+                  key={project.id}
+                  className={`${
+                    project.meta.hasDetailedPage
+                      ? "flex column projects-item with-detail"
+                      : "flex column projects-item"
+                  }`}
+                  onClick={() =>
+                    project.meta.hasDetailedPage &&
+                    navigate(`${location.pathname}${project.slug}`)
+                  }
+                >
                   <p className="sub-title">{project.plain_title}</p>
                   <div className="image-wrapper flex noGrow">
                     {project.featured_image_urls ? (
@@ -204,12 +215,7 @@ const ProjectsPage = (props: Props) => {
                     )}
                     <div className="text-md year">{project.meta.year}</div>
                     {project.meta.hasDetailedPage ? (
-                      <i
-                        onClick={() =>
-                          navigate(`${location.pathname}${project.slug}`)
-                        }
-                        className="fa-solid fa-arrow-right text-md"
-                      />
+                      <i className="fa-solid fa-arrow-right text-md" />
                     ) : (
                       ""
                     )}

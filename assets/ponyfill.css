@@ -901,6 +901,7 @@ strong {
 .featured-projects .projects-wrapper {
   border-bottom: solid 1px #000;
   margin-bottom: 10px;
+  width: 100%;
 }
 .featured-projects .projects-group {
   border-top: solid 1px #000;
@@ -1161,6 +1162,9 @@ strong {
   width: 100%;
   min-width: 0;
 }
+.projects .projects-list .projects-item.with-detail {
+  cursor: pointer;
+}
 .projects .projects-list .sub-title {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1408,6 +1412,19 @@ strong {
   gap: 50px 20px;
 }
 
+.people-banner,
+.contact-us-banner {
+  height: auto;
+  min-height: auto;
+}
+.people-banner .banner-image,
+.contact-us-banner .banner-image {
+  position: relative !important;
+  margin: 0 !important;
+  height: auto;
+  width: 100%;
+}
+
 .people-column {
   overflow: hidden;
   flex-basis: 360px;
@@ -1423,6 +1440,7 @@ strong {
   height: 100%;
   width: 100%;
   margin: 0;
+  background-color: rgba(118, 168, 140, 0.17);
 }
 .people-column .image-wrapper img {
   width: 100%;
@@ -1492,6 +1510,11 @@ h6 {
   line-height: 1.2;
 }
 
+a:not(.ab-item):not(.screen-reader-shortcut):active,
+a:not(.ab-item):not(.screen-reader-shortcut):focus {
+  outline: none;
+}
+
 .page .wp-site-blocks {
   min-height: 50vh;
   height: 100%;
@@ -1504,6 +1527,26 @@ h6 {
   position: relative;
   margin-top: 64px;
   min-height: 50vh;
+}
+
+.address-marker:not(.active-address) {
+  cursor: pointer;
+}
+.address-marker:not(.active-address) > .sub-title {
+  color: #757575 !important;
+}
+
+.ol-marker {
+  height: 35px !important;
+}
+.ol-marker img {
+  height: 100%;
+  width: auto;
+}
+
+.active-marker {
+  transform: scale(1.2);
+  z-index: 1000;
 }
 
 /* md: up to 768px */
