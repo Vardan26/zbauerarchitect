@@ -46,7 +46,7 @@ const ProjectsItem = (props: Props) => {
   return (
     <BusyWrapper isBusy={isLoading || !currentProject}>
       <div className="single-project">
-        <div className="banner">
+        <div className="banner banner-project">
           <figure className="banner-image">
             <img src={featuredImage} />
           </figure>

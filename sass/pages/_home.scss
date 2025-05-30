@@ -272,6 +272,9 @@
 
 /* md: up to 480px */
 @media (max-width: 480px) {
+  .banner-home {
+    height: calc(100vh - 118px);
+  }
   .about-content {
     & > :last-child {
       .with-icon {

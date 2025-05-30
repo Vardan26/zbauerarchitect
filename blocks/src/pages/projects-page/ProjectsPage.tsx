@@ -127,10 +127,12 @@ const ProjectsPage = (props: Props) => {
 
             return (
               <div key={group.slug} className="filter-group flex column">
-                <p className="filter-group-title text-sm bold flex align-center">
+                <p
+                  onClick={() => setFilterOpen(!isFilterOpen)}
+                  className="filter-group-title text-sm bold flex align-center"
+                >
                   {group.name}
                   <i
-                    onClick={() => setFilterOpen(!isFilterOpen)}
                     className={`fa-solid ${
                       isFilterOpen ? "fa-minus" : "fa-plus"
                     }`}

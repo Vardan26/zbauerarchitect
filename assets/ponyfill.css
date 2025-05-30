@@ -757,6 +757,7 @@ strong {
     max-width: 480px;
     padding: 20px;
     flex-direction: column-reverse;
+    margin: 30px auto 0;
   }
   .banner .content > .wp-block-group {
     flex-grow: 0;
@@ -1035,6 +1036,9 @@ strong {
 }
 /* md: up to 480px */
 @media (max-width: 480px) {
+  .banner-home {
+    height: calc(100vh - 118px);
+  }
   .about-content > :last-child .with-icon {
     bottom: 50px;
     left: 10px;
@@ -1206,6 +1210,16 @@ strong {
 .single-project {
   overflow: hidden;
 }
+.single-project .banner-project {
+  height: auto;
+  min-height: auto;
+}
+.single-project .banner-project .banner-image {
+  position: relative !important;
+  margin: 0 !important;
+  height: auto;
+  width: 100%;
+}
 .single-project .banner-heading {
   position: absolute;
   color: #fff;
@@ -1272,7 +1286,7 @@ strong {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.7803921569);
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1378,6 +1392,9 @@ strong {
 
 /* md: up to 480px */
 @media (max-width: 480px) {
+  .single-project .banner {
+    height: calc(100vh - 118px);
+  }
   .single-project .banner-heading {
     position: absolute;
     right: auto;
@@ -1391,6 +1408,7 @@ strong {
   }
   .single-project .banner-heading .single-project-title {
     font-size: 64px;
+    font-weight: 300;
   }
 }
 .people {
@@ -1448,6 +1466,9 @@ strong {
 }
 /* md: up to 768px */
 @media (max-width: 768px) {
+  .join-team {
+    margin-top: 20px !important;
+  }
   .people-column {
     flex-basis: 160px;
     min-width: auto;
@@ -1477,6 +1498,18 @@ strong {
 @media (max-width: 640px) {
   .founder .image-wrapper {
     height: 270px;
+  }
+}
+/* sm: up to 480px */
+@media (max-width: 480px) {
+  .people .with-margin-top {
+    margin-top: 20px !important;
+  }
+  .people-content {
+    margin-bottom: 50px !important;
+  }
+  .people-content:last-of-type {
+    margin-bottom: 0 !important;
   }
 }
 /* Set default font for the entire page to Roboto */

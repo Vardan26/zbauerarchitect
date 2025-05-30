@@ -142,3 +142,15 @@ function enqueue_marker_controls_script() {
     }
 }
 add_action('wp_enqueue_scripts', 'enqueue_marker_controls_script');
+
+function custom_theme_scripts() {
+    // Register and enqueue your main.js file
+    wp_enqueue_script(
+        'custom-main-js', // Handle
+        get_template_directory_uri() . '/assets/main.js', // Path to the JS file
+        array(), // Dependencies (e.g., array('jquery') if needed)
+        filemtime(get_template_directory() . '/assets/main.js'), // Version based on file modification time
+        true // Load in footer
+    );
+}
+add_action('wp_enqueue_scripts', 'custom_theme_scripts');
