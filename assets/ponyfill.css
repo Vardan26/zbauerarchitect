@@ -494,15 +494,6 @@ footer {
  * Elements
  * - Styles for basic HTML elemants
  */
-a,
-.wp-block-navigation a {
-  text-underline-offset: 0.15em;
-}
-
-a:not(.ab-item):not(.screen-reader-shortcut):active, a:not(.ab-item):not(.screen-reader-shortcut):focus {
-  outline: 1px dotted currentcolor;
-}
-
 input.wp-block-search__input,
 input[type=text],
 input[type=email],
@@ -529,36 +520,7 @@ select {
   font-family: inherit;
   padding: var(--wp--custom--form--padding);
 }
-input.wp-block-search__input:focus,
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=url]:focus,
-input[type=password]:focus,
-input[type=search]:focus,
-input[type=number]:focus,
-input[type=tel]:focus,
-input[type=range]:focus,
-input[type=date]:focus,
-input[type=month]:focus,
-input[type=week]:focus,
-input[type=time]:focus,
-input[type=datetime]:focus,
-input[type=datetime-local]:focus,
-input[type=color]:focus,
-textarea:focus,
-select:focus {
-  border-color: var(--wp--custom--form--color--border);
-  color: var(--wp--custom--form--color--text);
-  outline: 1px dotted currentcolor;
-  outline-offset: 2px;
-}
 
-input[type=checkbox]:focus,
-input[type=submit]:focus,
-button:focus {
-  outline: 1px dotted currentcolor;
-  outline-offset: 2px;
-}
 input[type=checkbox]::placeholder,
 input[type=submit]::placeholder,
 button::placeholder {
@@ -1265,19 +1227,33 @@ strong {
   height: 355px;
   width: 100%;
   overflow: visible !important;
+  position: relative;
 }
 .single-project .swiper .swiper-zoom-container > img {
   height: 100%;
   width: auto;
   display: block;
 }
+.single-project .swiper .swiper-button-prev,
+.single-project .swiper .swiper-button-next {
+  height: 40px;
+  width: 40px;
+  top: calc(50% - 20px);
+  background: rgba(255, 255, 255, 0.0588235294);
+  margin-top: 0;
+  border-radius: 50%;
+}
+.single-project .swiper .swiper-button-prev:hover,
+.single-project .swiper .swiper-button-next:hover {
+  background: rgba(255, 255, 255, 0.5607843137);
+}
 .single-project .swiper .swiper-button-prev:after,
 .single-project .swiper .swiper-button-next:after {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   content: "\f060";
-  font-size: 16px;
-  color: #000;
+  font-size: 18px;
+  color: #474747;
 }
 .single-project .swiper .swiper-button-next:after {
   content: "\f061";
@@ -1320,6 +1296,18 @@ strong {
 .single-project .slider-popup-container .fas,
 .single-project .slider-popup-container .fa-solid {
   cursor: pointer;
+  height: 40px;
+  width: 40px;
+  background: rgba(255, 255, 255, 0.0588235294);
+  margin-top: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.single-project .slider-popup-container .fas:hover,
+.single-project .slider-popup-container .fa-solid:hover {
+  background: rgba(255, 255, 255, 0.5607843137);
 }
 .single-project .slider-popup-container .fa-solid {
   margin-left: auto;

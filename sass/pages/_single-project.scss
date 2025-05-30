@@ -25,6 +25,7 @@
     height: 355px;
     width: 100%;
     overflow: visible !important;
+    position: relative;
 
     .swiper-zoom-container > img {
       height: 100%;
@@ -32,13 +33,27 @@
       display: block;
     }
 
+    .swiper-button-prev,
+    .swiper-button-next {
+      height: 40px;
+      width: 40px;
+      top: calc(50% - 20px);
+      background: #ffffff0f;
+      margin-top: 0;
+      border-radius: 50%;
+
+      &:hover {
+        background: #ffffff8f;
+      }
+    }
+
     .swiper-button-prev:after,
     .swiper-button-next:after {
       font-family: "Font Awesome 6 Free";
       font-weight: 900;
       content: "\f060";
-      font-size: 16px;
-      color: #000;
+      font-size: 18px;
+      color: #474747;
     }
 
     .swiper-button-next:after {
@@ -87,6 +102,18 @@
       .fas,
       .fa-solid {
         cursor: pointer;
+        height: 40px;
+        width: 40px;
+        background: #ffffff0f;
+        margin-top: 0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          background: #ffffff8f;
+        }
       }
 
       .fa-solid {
