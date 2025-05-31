@@ -1105,6 +1105,10 @@ strong {
 .projects .filter-group {
   flex-basis: 50%;
 }
+.projects .filter-group-title {
+  cursor: pointer;
+  align-self: flex-start;
+}
 .projects .filter-group-title .fa-solid {
   margin-left: 18px;
 }
@@ -1347,6 +1351,7 @@ strong {
 .single-project .types {
   margin: 30px 0;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .single-project-title {
   font-size: 72px;
@@ -1483,6 +1488,9 @@ strong {
     white-space: normal;
     word-break: break-word;
     max-width: 140px;
+  }
+  .people-column.with-small-name .sub-title {
+    max-width: 130px;
   }
   .people-column .image-wrapper {
     height: 120px;

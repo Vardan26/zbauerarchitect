@@ -74,6 +74,12 @@
       max-width: 140px;
     }
 
+    &.with-small-name {
+      .sub-title {
+        max-width: 130px;
+      }
+    }
+
     .image-wrapper {
       height: 120px;
     }

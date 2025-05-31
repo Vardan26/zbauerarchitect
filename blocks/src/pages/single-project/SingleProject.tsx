@@ -137,7 +137,7 @@ const ProjectsItem = (props: Props) => {
             </div>
           </div>
           <span
-            onClick={() => navigate("/projects")}
+            onClick={() => navigate("/projects/")}
             className="link with-icon"
           >
             see all projects

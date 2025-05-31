@@ -21,6 +21,9 @@
       flex-basis: 50%;
 
       &-title {
+        cursor: pointer;
+        align-self: flex-start;
+
         .fa-solid {
           margin-left: 18px;
         }
