@@ -244,7 +244,7 @@
           "fontFace": [
             {
               "src": [
-                "file:./assets/fonts/bebas-neue-pro/Bebas-Neue-Pro-Regular.ttf"
+                "file:./assets/fonts/bebas-neue-pro/Bebas-Neue-Pro-Regular.otf"
               ],
               "fontWeight": "400",
               "fontStyle": "normal",
@@ -253,7 +253,7 @@
             },
             {
               "src": [
-                "file:./assets/fonts/bebas-neue-pro/Bebas-Neue-Pro-Italic.ttf"
+                "file:./assets/fonts/bebas-neue-pro/Bebas-Neue-Pro-Italic.otf"
               ],
               "fontWeight": "400",
               "fontStyle": "italic",
@@ -262,7 +262,7 @@
             },
             {
               "src": [
-                "file:./assets/fonts/bebas-neue-pro/Bebas-Neue-Pro-Bold.ttf"
+                "file:./assets/fonts/bebas-neue-pro/Bebas-Neue-Pro-Bold.otf"
               ],
               "fontWeight": "700",
               "fontStyle": "normal",
@@ -271,7 +271,7 @@
             },
             {
               "src": [
-                "file:./assets/fonts/bebas-neue-pro/Bebas-Neue-Pro-Bold-Italic.ttf"
+                "file:./assets/fonts/bebas-neue-pro/Bebas-Neue-Pro-Bold-Italic.otf"
               ],
               "fontWeight": "700",
               "fontStyle": "italic",
@@ -287,7 +287,7 @@
           "fontFace": [
             {
               "src": [
-                "file:./assets/fonts/bebas-neue-pro/Bebas-Neue-Pro-Book.ttf"
+                "file:./assets/fonts/bebas-neue-pro/Bebas-Neue-Pro-Book.otf"
               ],
               "fontWeight": "400",
               "fontStyle": "normal",
@@ -296,7 +296,7 @@
             },
             {
               "src": [
-                "file:./assets/fonts/bebas-neue-pro/Bebas-Neue-Pro-Book-Italic.ttf"
+                "file:./assets/fonts/bebas-neue-pro/Bebas-Neue-Pro-Book-Italic.otf"
               ],
               "fontWeight": "400",
               "fontStyle": "italic",
